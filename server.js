@@ -7,7 +7,7 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 
 mongoose.connect(
-    "mongodb+srv://danishnanjiani09:fysRY1kajzUejgo4@cluster0.gxyqxyx.mongodb.net/",
+    // connect mongodb string ,
     {dbName: "NodeJs_Mastery_Course"}
 ).then(()=>console.log("MongoDb is Connected")).catch((err)=>console.log(err))
 
